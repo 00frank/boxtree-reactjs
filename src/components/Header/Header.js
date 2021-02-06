@@ -11,7 +11,7 @@ class Header extends React.Component {
           <h1>BoxTree</h1>
         </div>
         <div id="sections">
-            {SECTIONS.map(e => <a key={e.name} href={e.href}>{e.name}</a>)}
+            {SECTIONS.map(e => <a key={e.name} href="#">{e.name}</a>)}
         </div>
       </header>
     )
@@ -19,10 +19,10 @@ class Header extends React.Component {
 }
 
 const SECTIONS = [
-  { name: 'Productos', href: '#productos' },
-  { name: 'Feedback', href: '#feedback' },
-  { name: 'Quien soy', href: '#quien-soy' },
-  { name: 'Contacto', href: '#contacto' }
+  { name: 'Productos'},
+  { name: 'Descuentos'},
+  { name: 'Sobre nosotros'},
+  { name: 'Contacto'}
 ]
 
 

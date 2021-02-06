@@ -2,13 +2,28 @@ import React from 'react'
 import './Filtrador.css'
 
 class Filtrador extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { checked: false, value: '' }
+    this.handleChange = this.handleChange.bind(this)
+    this.handleCheck = this.handleCheck.bind(this)
+  }
+  handleChange(e) {
+    const value = e.target.value
+    this.setState({value})
+    this.props.handleChange('filterText', value)
+  }
+  handleCheck() {
+    this.setState({checked: !this.state.checked})
+    this.props.handleChange('stockOnly',!this.state.checked)
+  }
   render() {
     return (
       <div id="filtrador">
         <form>
-          <input type="text" placeholder="Buscar..." />
+          <input type="text" placeholder="Buscar..." onChange={this.handleChange} />
           <label className="switch">
-            <input type="checkbox" />
+            <input type="checkbox" onChange={this.handleCheck} />
             <span className="slider round"></span>
           </label>
           <label className="message">Mostrar unicamente los productos con stock</label>
@@ -37,11 +52,13 @@ class Toggle extends React.Component {
   }
   render() {
     return (
-      <label className="switch">
-        <input type="checkbox" checked={this.state.active} onChange={this.handleClick} />
-        <span className="slider round"></span>
-      </label>
-      // <label>Mostrar {this.props.name}? ({this.state.active ? 'Si' : 'No'})</label>
+      <div className="toggle">
+        <label className="switch">
+          <input type="checkbox" checked={this.state.active} onChange={this.handleClick} />
+          <span className="slider round"></span>
+        </label>
+        <label>Mostrar {this.props.name}? ({this.state.active ? 'Si' : 'No'})</label>
+      </div>
     )
   }
 }
