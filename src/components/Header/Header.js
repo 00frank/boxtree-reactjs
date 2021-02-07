@@ -28,5 +28,4 @@ const SECTIONS = [
   { name: 'Más proyectos', href: '/proyectos' }
 ]
 
-
 export default Header;

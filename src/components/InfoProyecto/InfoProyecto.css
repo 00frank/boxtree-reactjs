@@ -100,12 +100,14 @@ pre{
   border-radius: 1rem;
 }
 
-code#install {
+code.install {
   padding: 10px;
 }
 
+
 .codigo {
   padding: 10px;
+  overflow-x: auto;
 }
 
 .red-link {

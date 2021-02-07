@@ -1,4 +1,5 @@
 import React from 'react'
+import './Proyectos.css'
 
 class Proyectos extends React.Component {
   componentDidMount() {
@@ -8,9 +9,7 @@ class Proyectos extends React.Component {
     return (
       <div className="container">
         <div id="proyectos">
-          <h1>dasd</h1>
-          <h1>das</h1>
-          <h1>dasdasdasd</h1>
+          <p className="typewriter">En construcción</p>
         </div>
       </div>
     )
