@@ -16,14 +16,15 @@
   pointer-events: none;
 }
 
-#brand {
+#brand a{
   display: flex;
   /* justify-content: center; */
   align-items: center;
   margin-left: 3rem;
+  text-decoration: none;
 }
 
-#brand h1 {
+#brand a h1 {
   display: inline;
   font-size: 2rem;
   /* height: fit-content; */
@@ -80,14 +81,14 @@
   margin-right: 0.4rem;
   /* height: max-content; */
   padding: 1rem 1rem;
-  background-color: red;
+  /* background-color: red; */
 }
 
 #sections ul li a {
   color: white;
   display: block;
   height: 100%;
-  background-color: black;
+  /* background-color: black; */
   text-decoration: none;
 }
 
