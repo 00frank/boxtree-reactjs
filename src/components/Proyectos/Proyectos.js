@@ -1,6 +1,9 @@
 import React from 'react'
 
 class Proyectos extends React.Component {
+  componentDidMount() {
+    document.title = "BoxTree - Más proyectos";
+  }
   render() {
     return (
       <div className="container">

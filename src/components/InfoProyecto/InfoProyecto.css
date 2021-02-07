@@ -10,13 +10,109 @@
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-#info-proyecto h1 {
-  font-size: 3rem;
-  letter-spacing: -1px;
+.introduccion {
+  /* border: 1px solid red; */
+  width: 60vw;
 }
 
-#info-proyecto p {
+#info-proyecto h1.titulo {
+  margin-top: 0;
+  font-size: 3rem;
+  letter-spacing: -1px;
+  color: #282C34;
+}
+
+#info-proyecto p.intro {
   font-size: 1.6rem;
   color: rgb(63, 63, 63);
   font-weight: 100;
+}
+
+.introduccion ul li {
+  margin-bottom: .5rem;
+  /* background-color: rgba(red, green, blue, alpha); */
+}
+
+#info-proyecto a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  background-color: #a2ebff56;
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+#info-proyecto a:hover {
+  background-color: #86def7e0;
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+#que-es-react,
+#bases,
+#rutas,
+#deploy {
+  padding-top: 4vh;
+}
+
+#que-es-react h2,
+#bases h2,
+#rutas h2,
+#deploy h2 {
+  margin-top: 100px;
+  color: #090a0c;
+  font-size: 2.2rem;
+}
+
+#que-es-react p,
+#bases p,
+#rutas p,
+#deploy p {
+  font-size: 1.2rem;
+}
+
+#deploy {
+  margin-bottom: 150px;
+}
+
+.yellow {
+  color: rgb(255, 255, 104);
+}
+.orange {
+  color: rgb(255, 164, 59);
+}
+
+.violet {
+  color: rgb(219, 68, 219);
+}
+.red {
+  color: rgb(255, 91, 91);
+}
+.green {
+  color: rgb(187, 238, 110);
+}
+.lblue {
+  color: rgb(111, 178, 201);
+}
+
+pre{
+  background-color: #282C34;
+  padding: 10px;
+  color: white;
+  border-radius: 1rem;
+}
+
+code#install {
+  padding: 10px;
+}
+
+.codigo {
+  padding: 10px;
+}
+
+.red-link {
+  background-color: #ffa2a286 !important;
+  
+}
+
+.red-link:hover {
+  background-color: #f05656c9 !important;
 }

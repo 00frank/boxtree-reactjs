@@ -14,7 +14,7 @@ class Header extends React.Component {
           </a>
         </div>
         <div id="sections">
-          {SECTIONS.map(e => <Link to={e.href}>{e.name}</Link>)}
+          {SECTIONS.map(e => <Link to={e.href} key={e.name}>{e.name}</Link>)}
         </div>
       </header>
     )
