@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/boxtree-reactjs/static/css/main.b02628f8.chunk.css",
-    "main.js": "/boxtree-reactjs/static/js/main.6555a49c.chunk.js",
-    "main.js.map": "/boxtree-reactjs/static/js/main.6555a49c.chunk.js.map",
+    "main.js": "/boxtree-reactjs/static/js/main.75963cdf.chunk.js",
+    "main.js.map": "/boxtree-reactjs/static/js/main.75963cdf.chunk.js.map",
     "runtime-main.js": "/boxtree-reactjs/static/js/runtime-main.3c6d90be.js",
     "runtime-main.js.map": "/boxtree-reactjs/static/js/runtime-main.3c6d90be.js.map",
     "static/js/2.af50e91c.chunk.js": "/boxtree-reactjs/static/js/2.af50e91c.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.3c6d90be.js",
     "static/js/2.af50e91c.chunk.js",
     "static/css/main.b02628f8.chunk.css",
-    "static/js/main.6555a49c.chunk.js"
+    "static/js/main.75963cdf.chunk.js"
   ]
 }
