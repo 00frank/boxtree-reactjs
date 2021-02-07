@@ -8,10 +8,10 @@ class Header extends React.Component {
     return (
       <header className="App-header">
         <div id="brand">
-          <a href="/">
+          <Link to="/">
             <img src={logo} className="App-logo" alt="logo" />
             <h1>BoxTree</h1>
-          </a>
+          </Link>
         </div>
         <div id="sections">
           {SECTIONS.map(e => <Link to={e.href} key={e.name}>{e.name}</Link>)}
