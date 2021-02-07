@@ -4,7 +4,7 @@ import Header from './components/Header/Header'
 import FiltradorTabla from './components/FiltradorTabla/FTabla'
 import InfoProyecto from './components/InfoProyecto/InfoProyecto'
 import Proyectos from './components/Proyectos/Proyectos'
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 export default class App extends React.Component {
   componentDidMount() {
