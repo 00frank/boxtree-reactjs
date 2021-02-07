@@ -81,7 +81,9 @@ class InfoProyecto extends React.Component {
                 <span className="orange">npm</span> i gh-pages
               </code>
             </pre>
-            <p>Facilita mucho el proceso ya que basta con hacer unos cambios en el archivo <a href="https://github.com/00frank/boxtree-reactjs/blob/master/package.json"><i>package.json</i></a> y tener un repositorio en github para que comienze el deploy del proyecto.</p>
+            <p>Facilita mucho el proceso ya que basta con hacer unos cambios en el 
+            archivo <a href="https://github.com/00frank/boxtree-reactjs/blob/master/package.json"><i>package.json</i></a> y
+            tener un repositorio en github para que este listo el deploy del proyecto.</p>
           </div>
         </div>
       </div>
