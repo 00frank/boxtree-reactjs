@@ -9,6 +9,9 @@ class FTabla extends React.Component {
     this.state = { filterText: '', stockOnly: false }
     this.handleChange = this.handleChange.bind(this)
   }
+  componentDidMount() {
+    document.title = "BoxTree";
+  }
   handleChange(name, value) {
     this.setState({ [name]: value })
   }

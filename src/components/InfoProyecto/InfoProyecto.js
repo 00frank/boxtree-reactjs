@@ -5,7 +5,6 @@ import './InfoProyecto.css'
 class InfoProyecto extends React.Component {
   componentDidMount() {
     document.title = "BoxTree - Información";
-
   }
   render() {
     return (
@@ -87,10 +86,10 @@ class InfoProyecto extends React.Component {
 }
 
 const LINKS = [
-  { name: "Qué es React?", href: "/info-proyecto#que-es-react" },
-  { name: "Bases", href: "/info-proyecto#bases" },
-  { name: "Rutas", href: "/info-proyecto#rutas" },
-  { name: "Deploy", href: "/info-proyecto#deploy" }
+  { name: "Qué es React?", href: "#que-es-react" },
+  { name: "Bases", href: "#bases" },
+  { name: "Rutas", href: "#rutas" },
+  { name: "Deploy", href: "#deploy" }
 ]
 
 function AppCode() {

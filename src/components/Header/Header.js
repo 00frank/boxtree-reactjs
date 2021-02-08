@@ -14,6 +14,7 @@ class Header extends React.Component {
     console.log('activeMobile:', !this.state.activeMobile);
   }
   render() {
+    console.log(process.env.PUBLIC_URL);
     return (
       <header className="App-header">
         <div id="brand">
