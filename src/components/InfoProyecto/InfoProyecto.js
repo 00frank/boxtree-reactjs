@@ -72,7 +72,7 @@ class InfoProyecto extends React.Component {
             <p>De nuevo, puede ver el código del proyecto en el <a href="https://github.com/00frank/boxtree-reactjs">repositorio de github</a></p>
           </div>
           <div id="deploy">
-            <h2>Deploy/lanzamiento</h2>
+            <h2>Deploy o lanzamiento</h2>
             <p>Para facilitar el deploy, o el subir el proyecto a algun lugar para que sea de vista publica, tambien
               instale un módulo llamado <a className="red-link" href="https://www.npmjs.com/package/gh-pages">gh-pages</a>
             </p>

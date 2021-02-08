@@ -6,6 +6,7 @@
 }
 
 #filtrador form {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -23,8 +24,15 @@
   border-radius: 1rem;
 }
 
+@media (max-width: 781px) {
+  #filtrador input[type="text"] {
+    width: auto;
+  }
+}
+
 .message {
   margin-left: 1rem;
+  text-align: center;
 }
 
 .switch {
@@ -51,6 +59,7 @@
   background-color: #ccc;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  z-index: -1;
 }
 
 .slider:before {

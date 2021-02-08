@@ -2,10 +2,7 @@
   background-color: #282c34;
   height: 9vh;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
-  /* justify-content: center; */
-  /* font-size: calc(10px + 2vmin); */
   color: white;
   position: fixed;
   width: 100%;
@@ -16,9 +13,8 @@
   pointer-events: none;
 }
 
-#brand a{
+#brand a {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   margin-left: 3rem;
   text-decoration: none;
@@ -27,7 +23,6 @@
 #brand a h1 {
   display: inline;
   font-size: 2rem;
-  /* height: fit-content; */
   color: #54b4cf;
 }
 
@@ -57,7 +52,7 @@
   /* background-color: black; */
   text-decoration: none;
   padding: 1rem 1.5rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   /* height: 100%; */
   display: inline-block;
 }
@@ -94,4 +89,73 @@
 
 #sections ul li:hover > a {
   color: #54b4cf;
+}
+
+#navigation {
+  display: none;
+}
+
+#mobile-navButton {
+  display: none;
+}
+
+/* > 965px corta los links  */
+@media (max-width: 965px) {
+  #brand a {
+    margin-left: 20%;
+  }
+  #mobile-navButton {
+    display: block;
+  }
+  #sections {
+    display: none;
+  }
+}
+
+#navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  right: -200px;
+  width: 60vw;
+  height: 100vh;
+  background-color: #40c3ff;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+
+#navigation a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 500;
+  background-color: rgb(175, 175, 175);
+  /* padding: 10px; */
+  width: min-content;
+  padding: 4px 8px;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 100;
+}
+
+#navigation.show {
+  right: 0;
+}
+#navigation.notShow {
+  right: -100%;
+}
+
+#mobile-navButton {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+#mobile-navButton button {
+  position: relative;
+  z-index: 100;
+  padding: 10px;
 }

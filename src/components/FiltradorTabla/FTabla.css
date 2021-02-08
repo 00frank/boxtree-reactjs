@@ -7,3 +7,9 @@
 #filtrador-tabla {
     width: 50%;
 }
+
+@media (max-width: 781px) {
+    #filtrador-tabla {
+        width: 80%;
+    }
+}

@@ -1,3 +1,7 @@
+html, body {
+  overflow: auto;
+}
+
 .App {
   justify-content: center;
   padding-bottom: 3rem;
