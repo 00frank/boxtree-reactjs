@@ -1,10 +1,6 @@
 import React from 'react'
 import './InfoProyecto.css'
-// import hljs from 'highlight.js/lib/core'
-// import 'highlight.js/styles/monokai-sublime.css'
-// import javascript from 'highlight.js/lib/languages/javascript'
-// hljs.registerLanguage('javascript', javascript)
-// hljs.initHighlightingOnLoad();
+// import { Link } from 'react-router-dom'
 
 class InfoProyecto extends React.Component {
   componentDidMount() {
@@ -42,7 +38,6 @@ class InfoProyecto extends React.Component {
               es una de las finalidades que tiene React, que la página se base en una aplicación de una
             sola página o <a href="https://es.wikipedia.org/wiki/Single-page_application">SPA</a>,
             -Single Page Application para los amigos-)</i>  <br /><br />
-
             Para ver el código del proyecto, podes entrar al <a href="https://github.com/00frank/boxtree-reactjs">repositorio de github</a>
             </p>
           </div>
@@ -92,10 +87,10 @@ class InfoProyecto extends React.Component {
 }
 
 const LINKS = [
-  { name: "Qué es React?", href: "#que-es-react" },
-  { name: "Bases", href: "#bases" },
-  { name: "Rutas", href: "#rutas" },
-  { name: "Deploy", href: "#deploy" }
+  { name: "Qué es React?", href: "/info-proyecto#que-es-react" },
+  { name: "Bases", href: "/info-proyecto#bases" },
+  { name: "Rutas", href: "/info-proyecto#rutas" },
+  { name: "Deploy", href: "/info-proyecto#deploy" }
 ]
 
 function AppCode() {
