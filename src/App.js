@@ -13,7 +13,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename="/boxtree-reactjs">
           <Header />
           <Switch>
             <Route path="/proyectos">
