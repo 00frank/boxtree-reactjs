@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Boxtree (hecho con React)
+
+Pueden probar el proyecto desde [acá](https://00frank.github.io/boxtree-reactjs).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
