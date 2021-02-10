@@ -10,23 +10,25 @@ class Filtrador extends React.Component {
   }
   handleChange(e) {
     const value = e.target.value
-    this.setState({value})
+    this.setState({ value })
     this.props.handleChange('filterText', value)
   }
   handleCheck() {
-    this.setState({checked: !this.state.checked})
-    this.props.handleChange('stockOnly',!this.state.checked)
+    this.setState({ checked: !this.state.checked })
+    this.props.handleChange('stockOnly', !this.state.checked)
   }
   render() {
     return (
       <div id="filtrador">
         <form>
           <input type="text" placeholder="Buscar..." onChange={this.handleChange} />
-          <label className="switch">
-            <input type="checkbox" onChange={this.handleCheck} />
-            <span className="slider round"></span>
-          </label>
-          <label className="message">Mostrar unicamente los productos con stock</label>
+          <div>
+            <label className="switch">
+              <input type="checkbox" onChange={this.handleCheck} />
+              <span className="slider round"></span>
+            </label>
+            <label className="message">Mostrar unicamente los productos con stock</label>
+          </div>
         </form>
       </div>
     )

@@ -1,19 +1,10 @@
-import React from 'react';
+import React, { useState} from 'react';
 import logo from '../../logo.svg';
 import { Link } from "react-router-dom";
 import './Header.css'
 
-class Header extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = { activeMobile: false }
-    this.toggleNavigation = this.toggleNavigation.bind(this)
-  }
-  toggleNavigation() {
-    this.setState({activeMobile: !this.state.activeMobile})
-    console.log('activeMobile:', !this.state.activeMobile);
-  }
-  render() {
+function Header() {
+  const [activeMobile, setMobile] = useState(false);
     return (
       <header className="App-header">
         <div id="brand">
@@ -27,14 +18,13 @@ class Header extends React.Component {
         </div>
         {/* Para diseño mobile */}
         <div id="mobile-navButton">
-          <button onClick={this.toggleNavigation}>{!this.state.activeMobile ? 'Abrir' : 'Cerrar'}</button>
+          <button onClick={() => setMobile(!activeMobile)}>{!activeMobile ? 'Abrir' : 'Cerrar'}</button>
         </div>
-        <div id="navigation" className={this.state.activeMobile ? 'show' : 'notShow'}>
+        <div id="navigation" className={activeMobile ? 'show' : 'notShow'}>
           {SECTIONS.map(e => <Link to={e.href} key={e.name}>{e.name}</Link>)}
         </div>
       </header>
     )
-  }
 }
 
 const SECTIONS = [
